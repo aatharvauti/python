@@ -4,7 +4,6 @@
 # add -> 2 variables
 # always return odd number
 # always return values between 0 and 100
-
 # division -> 2 variables
 # value of floor division * value of remainder
 # a // b * a % b
