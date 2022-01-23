@@ -44,3 +44,13 @@ for win in data.get("windows"):
     for tab in win.get("tabs"):
         i = int(tab.get("index")) - 1
         session = tab.get("entries")[i].get("url")
+
+# banned websites
+banned = ["instagram", "facebook", "netflix", "hotstar", "r/PewdiepieSubmissions", "hbo", "9gag", "gogoanime", "crunchyroll", "9anime", "funimation"]
+
+# logic of the code to kill browser when procrastinating
+for site in banned:
+    if f"{site}" in str(session):
+        kill_firefox()
+    else:
+        continue
