@@ -20,6 +20,25 @@ file.close()
 # session refers to current tab in firefox
 session = ""
 
+
+def kill_firefox():
+    prc = "firefox"
+    try:
+        # iterating through each instance of the prc
+        for line in os.popen("ps ax | grep " + prc + " | grep -v grep"):
+            # return a list of the words in the string, using sep as the delimiter string
+            fields = line.split()
+
+            # extracting Process ID (pid) from fields
+            pid = fields[0]
+
+            # terminating the process by sending SIGKILL using signal
+            os.kill(int(pid), signal.SIGKILL)
+        print(f"The process {prc} is now terminated")
+    except:
+        print("ERR: failed to execute commands")
+
+
 # sorting out json data to get the url of current tab
 for win in data.get("windows"):
     for tab in win.get("tabs"):
