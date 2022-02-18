@@ -25,18 +25,24 @@ def check_hospitals():
                 print("Vaccine: \t" + str(data["centers"][x]["sessions"][y]["vaccine"]))
                 print("Slots: \t\t" + str(data["centers"][x]["sessions"][y]["slots"]))
                 print("Availability:")
-                print("\tFirst Dose: \t" + str(data["centers"][x]["sessions"][y]["available_capacity_dose1"]))
-                print("\tSecond Dose: \t" + str(data["centers"][x]["sessions"][y]["available_capacity_dose2"]))
+                if data["centers"][x]["sessions"][y]["available_capacity_dose1"]:
+                    print("\tFirst Dose: \t" + str(data["centers"][x]["sessions"][y]["available_capacity_dose1"]))
+                if data["centers"][x]["sessions"][y]["available_capacity_dose2"]:
+                    print("\tSecond Dose: \t" + str(data["centers"][x]["sessions"][y]["available_capacity_dose2"]))
                 if data["centers"][x]["sessions"][y]["precaution_dose"]:
                     print("\tBooster Dose: \t" + str(data["centers"][x]["sessions"][y]["precaution_dose"]))
                 print('\n')
             if data["centers"][x]["pincode"] == pin:
                 if age >= 18:
                     if data["centers"][x]["sessions"][y]["min_age_limit"] == 18 or data["centers"][x]["sessions"][y]["min_age_limit"] == 15:
-                        print_info()
+                        return print_info()
                 else:
                     if data["centers"][x]["sessions"][y]["min_age_limit"] == 15:
-                        print_info()
+                        return print_info()
 
-check_hospitals()
+
+
+with open('output.txt', 'w') as f:
+    f.write(str(check_hospitals()))
+
 
