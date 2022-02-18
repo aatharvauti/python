@@ -22,7 +22,7 @@ msg.set_content('This message was sent using Python3!')
 # with open('output.txt', 'rb') as f: # rb means read bytes mode
 #     file_data_main = f.read()
 #     file_name_main = f.name
-# 
+#
 # msg.add_attachment(file_data_main, maintype='text', subtype='plain', filename=file_name_main)
 
 # with smtplib.SMTP('localhost',1025) as smtp: # test
