@@ -4,3 +4,6 @@
 [submodule "cryptohack"]
 	path = cryptohack
 	url = git@github.com:aatharvauti/cryptohack.git
+[submodule "antiprocrastinator"]
+	path = antiprocrastinator
+	url = git@github.com:aatharvauti/antiprocrastinator.git
