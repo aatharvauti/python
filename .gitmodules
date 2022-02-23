@@ -7,3 +7,6 @@
 [submodule "antiprocrastinator"]
 	path = antiprocrastinator
 	url = git@github.com:aatharvauti/antiprocrastinator.git
+[submodule "cryptalert"]
+	path = cryptalert
+	url = git@github.com:aatharvauti/cryptalert.git
