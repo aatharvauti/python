@@ -10,3 +10,6 @@
 [submodule "cryptalert"]
 	path = cryptalert
 	url = git@github.com:aatharvauti/cryptalert.git
+[submodule "py-twilio"]
+	path = py-twilio
+	url = git@github.com:aatharvauti/py-twilio.git
