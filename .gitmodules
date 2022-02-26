@@ -16,3 +16,6 @@
 [submodule "py-hackerrank"]
 	path = py-hackerrank
 	url = git@github.com:aatharvauti/py-hackerrank.git
+[submodule "py-oops"]
+	path = py-oops
+	url = git@github.com:aatharvauti/py-oops.git
