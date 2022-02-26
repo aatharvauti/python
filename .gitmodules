@@ -1,3 +1,6 @@
 [submodule "mkproj"]
 	path = mkproj
 	url = git@github.com:aatharvauti/mkproj.git
+[submodule "cryptohack"]
+	path = cryptohack
+	url = git@github.com:aatharvauti/cryptohack.git
