@@ -13,3 +13,6 @@
 [submodule "py-twilio"]
 	path = py-twilio
 	url = git@github.com:aatharvauti/py-twilio.git
+[submodule "py-hackerrank"]
+	path = py-hackerrank
+	url = git@github.com:aatharvauti/py-hackerrank.git
