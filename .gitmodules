@@ -1,0 +1,3 @@
+[submodule "mkproj"]
+	path = mkproj
+	url = git@github.com:aatharvauti/mkproj.git
