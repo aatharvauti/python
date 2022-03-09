@@ -1,7 +1,6 @@
 #!/usr/bin/python
 from dotenv import load_dotenv
 import os
-from os import path
 import smtplib
 from email.message import EmailMessage
 
@@ -25,15 +24,7 @@ msg.set_content('This message was sent using Python3!')
 #
 # msg.add_attachment(file_data_main, maintype='text', subtype='plain', filename=file_name_main)
 
-# with smtplib.SMTP('localhost',1025) as smtp: # test
-# run in terminal to test: python3 -m smtpd -c DebuggingServer -n localhost:1025
-
 with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:  # prod
     smtp.login(EMAIL_ADDR, EMAIL_PASS)
     smtp.send_message(msg)
     smtp.close()
-
-
-# print(EMAIL_ADDR)
-
-# os.remove("mail.sh")
