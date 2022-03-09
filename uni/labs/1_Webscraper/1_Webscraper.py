@@ -1,5 +1,5 @@
+#!/usr/bin/python
 import requests
-
 
 print("Enter Date as dd-mm-yyyy: ")
 date = input()
@@ -44,5 +44,3 @@ def check_hospitals():
 
 with open('output.txt', 'w') as f:
     f.write(str(check_hospitals()))
-
-
