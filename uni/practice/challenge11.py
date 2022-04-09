@@ -1,8 +1,6 @@
 import mysql.connector
 from mysql.connector import Error
 
-print("Atharva Auti Roll Number 1")
-
 try:
     db = '*****************'
     
