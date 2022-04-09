@@ -2,7 +2,6 @@
 
 import csv
 
-print("Atharva Auti Roll Number 1")
 with open('sample.csv', newline='') as csvfile:
     data = csv.reader(csvfile, delimiter=';', quotechar='|')
     for row in data:
