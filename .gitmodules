@@ -19,3 +19,6 @@
 [submodule "py-oops"]
 	path = py-oops
 	url = git@github.com:aatharvauti/py-oops.git
+[submodule "djangoapps"]
+	path = djangoapps
+	url = git@github.com:aatharvauti/djangoapps.git
