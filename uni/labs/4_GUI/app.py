@@ -62,8 +62,8 @@ def cbfx():
         subject_list.append("Java")
 
     s = ","
-    s = s.join(list)
-    print(f"\tSubjects: {list}")
+    s = s.join(subject_list)
+    print(f"\tSubjects: {s}")
 
 button = tk.Button(
     text = "Submit",
