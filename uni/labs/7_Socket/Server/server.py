@@ -25,7 +25,6 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
                 f.write(data)
                 f.close()
             
-            # print(f'Message: {str(data)}')
             if not data or len(data) < 1024:
                 break
         conn.sendall(b'Finished Data Transfer!')
