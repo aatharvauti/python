@@ -1,7 +1,4 @@
 #!/usr/bin/python
-import sys
-sys.path.insert(1, '../6_CRUD/')
-import db
 
 import tkinter as tk
 
