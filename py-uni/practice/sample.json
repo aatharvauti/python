@@ -1,0 +1,28 @@
+{
+    "student_details": [
+        {
+            "Name": "Atharva Auti",
+            "Email": "atharva.auti15523@sakec.ac.in",
+            "Branch": "Cybersecurity",
+            "Mobile": "99696969696969"
+        },
+        {
+            "Name": "Sahil Sakpal",
+            "Email": "sahil.sakpal15619@sakec.ac.in",
+            "Branch": "Cybersecurity",
+            "Mobile": "91191169420911"
+        },
+        {
+            "Name": "Ritwik Karbhari",
+            "Email": "ritwik.karbhari15747@sakec.ac.in",
+            "Branch": "Cybersecurity",
+            "Mobile": "91747280777737"
+        },
+        {
+            "Name": "Aditya Panda",
+            "Email": "aditya.panda15444@sakec.ac.in",
+            "Branch": "Cybersecurity",
+            "Mobile": "914445556667778"
+        }
+    ]
+}
